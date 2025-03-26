@@ -1,0 +1,96 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #424242;
+    width: 50%;
+    flex-direction: column;
+    margin: auto;
+    background-color: #f2f2f2;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: #24a0d1;
+}
+
+/* HEADER */
+.name {
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.title {
+    margin-left: 50px;
+}
+
+.contact {
+    margin-left: 40px;
+}
+
+/* ------ */
+
+.skills-list {
+    display: grid;
+    flex-direction: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 40px;
+}
+
+
+hr {
+    border: solid 0.5px #868484;
+}
+
+
+/* PROJECTS */
+.project-name {
+    font-weight: bold;
+    color: #000;
+}
+/* -------- */
+
+/* EDUCATION & LANGUAGES */
+.education-languages-section {
+    margin: 0px 40px;
+    display: flex;
+}
+
+.education {
+    width: 41.5%;
+}
+
+.languages {
+    width: 41.5%;
+}
+
+/* --------------------------- */
+
+.sub-title {
+    font-weight: bold;
+    color: #000;
+}
+
+
+/* CERTIFICATIONS & REFERENCES */
+.certifications-references-section {
+    margin: 0px 40px;
+    display: flex;
+}
+
+
+.certifications {
+    width: 41.5%;
+}
+
+.references {
+    width: 41.5%;
+}
+
+/* --------------------------- */
