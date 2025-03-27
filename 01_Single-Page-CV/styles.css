@@ -36,12 +36,25 @@ a {
 
 /* ------ */
 
+
+/* SUMMARY */
+.summary {
+    margin: 0px 30px;
+}
+/* ------- */
+
+/* SKILLS */
+.skills {
+    margin: 0px 30px;
+}
+
 .skills-list {
     display: grid;
     flex-direction: grid ;
     grid-template-columns: repeat(3, 1fr);
     margin: 0px 40px;
 }
+/* ------ */
 
 
 hr {
@@ -50,6 +63,10 @@ hr {
 
 
 /* PROJECTS */
+.projects {
+    margin: 0px 30px;
+}
+
 .project-name {
     font-weight: bold;
     color: #000;
@@ -58,7 +75,7 @@ hr {
 
 /* EDUCATION & LANGUAGES */
 .education-languages-section {
-    margin: 0px 40px;
+    margin: 0px 30px;
     display: flex;
 }
 
@@ -80,7 +97,7 @@ hr {
 
 /* CERTIFICATIONS & REFERENCES */
 .certifications-references-section {
-    margin: 0px 40px;
+    margin: 0px 30px;
     display: flex;
 }
 
