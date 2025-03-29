@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" href="../img/basic-website-icon.png" type="image/x-icon">
+    <title>02 Basic HTML Website | Roadmap.sh</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="profile">
+        <img
+          src="https://github.com/CarlosPigurina.png"
+          alt="name"
+          class="profile-img"
+        />
+        <p class="profile-name">Carlos Pigurina</p>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="../pages/home.html" class="navbar-link">Home</a>
+          </li>
+          <p>/</p>
+          <li class="navbar-item">
+            <a href="../pages/projects.html" class="navbar-link">Projects</a>
+          </li>
+          <p>/</p>
+          <li class="navbar-item">
+            <a href="../pages/articles.html" class="navbar-link">Articles</a>
+          </li>
+          <p>/</p>
+          <li class="navbar-item">
+            <a href="../pages/contact.html" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <h1>Contact Me</h1>
+      <form action="submit_form.php" method="POST" class="contact-form">
+        <label for="name" class="contact-label">Name:</label>
+        <input type="text" id="name" name="name" class="contact-input" placeholder="John Doe" required/>
+
+        <label for="email" class="contact-label">Email:</label>
+        <input type="email" id="email" name="email" class="contact-input" placeholder="johndoe@example.com" required />
+
+        <label for="message" class="contact-label">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          maxlength="100"
+          class="contact-textarea"
+          placeholder="Write your message here..."
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit" class="contact-button">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>© Carlos Martín Pigurina. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
