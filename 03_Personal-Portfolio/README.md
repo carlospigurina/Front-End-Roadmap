@@ -19,7 +19,7 @@ The source code is available in their respectives HTML5 and CSS files.
   Snapshots and Live Demo :camera:
 </h3>
 <p align="center">
-  Click this <a href="https://carlospigurina-basic-html-webpage.netlify.app">link</a> to view a live demo of the project.
+  Click this <a href="https://carlospigurina-personal-portfolio.netlify.app">link</a> to view a live demo of the project.
 </p>
 <br>
 
