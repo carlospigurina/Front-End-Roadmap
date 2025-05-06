@@ -1,0 +1,609 @@
+body { 
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #424242;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 5px 50px 5px 50px;
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,.2);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-name {
+    font-style: italic;
+}
+
+.profile-img {
+    width: 70px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+}
+
+.navbar-list{
+    font-style: italic;
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #424242;
+}
+/* ------ */
+
+/* TITLE */
+.title {
+    background-color: #333333;
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: whitesmoke;
+}
+
+.subtitle {
+    color: grey;
+}
+/* ----- */
+
+/* SUMMARY */
+.summary {
+    display: flex;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-top: rgb(153, 152, 152) solid 1px;
+    border-bottom: rgb(153, 152, 152) solid 1px;
+
+}
+
+.summary > section{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+/* ------- */
+
+/* PROJECTS */
+.projects {
+    padding: 20px;
+    border-right: rgb(153, 152, 152) solid 1px;
+}
+
+.project {
+    padding-bottom: 1px;
+}
+/* --------- */
+
+/* WORK EXPERIENCE */
+.work-experience {
+    padding: 20px;
+    border-right: rgb(153, 152, 152) solid 1px;
+}
+
+.work-experience-item {
+    padding-bottom: 10px;
+}
+
+.work-experience-link {
+    text-decoration: none;
+    color: #24a0d1;
+}
+
+.work-experience-title {
+    font-weight: bold;
+    font-style: italic;
+}
+/* --------------- */
+
+/* EDUCATION */
+.education {
+    width: 20%;
+    padding: 20px;
+}
+
+.course-list {
+    padding-left: 20px;
+}
+
+.course-item {
+    padding-bottom: 10px;
+}
+
+.course-link {
+    text-decoration: none;
+    color: #24a0d1;
+}
+/* --------- */
+
+
+
+/* REVIEWS */
+.reviews {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.reviews-title {
+    text-align: center;
+    font-size: 27px;
+    padding: 10px 10px 20px 10px;
+}
+
+.reviews-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.review {
+    color: #e6e5e5;
+    background-color: #363636;
+    padding: 20px;
+    border: #333333 solid 1px;
+    border-radius: 15px;
+    width: 15%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
+}
+
+.testimony {
+    text-align: right;
+    color: rgb(209, 209, 209);
+}
+/* ------- */
+
+/* CONTACT */
+.contact {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    gap: 20px;
+    padding: 30px;
+    border: #333333 solid 1px;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
+    width: 25%;
+}
+
+.contact-button {
+    background-color: #24a0d1;
+    padding: 5px;
+    border: #333333 solid 1px;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
+    color: #f2f2f2;
+}
+
+.contact-label {
+    color: #f2f2f2;
+}
+
+.contact-input {
+    padding: 5px;
+    border: #333333 solid 1px;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
+}
+
+.contact-textarea {
+    resize: none;
+    padding: 5px;
+    border: #333333 solid 1px;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
+}
+/* ------ */
+
+
+/* ARTICLES */
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 60px;
+    margin-top: 35px;
+}
+
+.article-title {
+    text-align: center;
+    font-size: 27px;
+}
+
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.article-link {
+    text-decoration: none;
+    color: #24a0d1;
+}
+
+.article-description {
+    font-size: 18px;
+}
+/* -------- */
+
+
+/* PROJECTS PAGE */
+.projects-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.projects-page-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.projects-page-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.projects-page-item {
+    background-color: #333333;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: #333333 solid 1px;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
+
+}
+/* ------------- */
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 20px 20px 20px;
+    background-color: #333333;
+    color: #f2f2f2;
+}
+/* ------ */
+
+/* MEDIA QUERIES */
+
+/* MOBILE */
+@media (width <= 480px) {
+
+    .header {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 20px;
+    }
+
+    .navbar-list {
+        gap: 10px;
+        font-size: 15px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .summary > section {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        border-bottom: rgb(153, 152, 152) solid 1px;
+    }
+
+    .projects {
+        border-bottom: rgb(153, 152, 152) solid 1px;
+        border-right: none;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .project {
+        text-align: center;
+        border-top: rgb(153, 152, 152) solid 1px;
+        background-color: #ccc;
+    }
+
+    .work-experience {
+        border-bottom: rgb(153, 152, 152) solid 1px;
+        text-align: center;
+        border-right: none;
+    }
+
+    .work-experience-item {
+        border-top: rgb(153, 152, 152) solid 1px;
+        text-align: left;
+        padding-left: 20px;
+        background-color: #ccc;
+
+    }
+
+    .education {
+        border-bottom: rgb(153, 152, 152) solid 1px;
+        text-align: center;
+        border-right: none;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    .education-info {
+        border-top: rgb(153, 152, 152) solid 1px;
+        text-align: left;
+        padding-left: 20px;
+        background-color: #ccc;
+    }
+
+    .course-list {
+        padding: 0px;
+        margin: 0px;
+        padding-left: 20px;
+    }
+
+    .reviews {
+        margin-bottom: 30px;
+    }
+
+    .reviews-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .review {
+        width: auto;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+}
+
+
+
+@media (480px < width <= 768px) {
+
+    .header {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .profile {
+        padding-top: 30px;
+        flex-direction: column;
+        gap: 0px;
+
+    }
+
+    .profile-img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .profile-name {
+        font-size: 19px;
+    }
+
+    .navbar-list {
+        padding: 0px;
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 25px;
+    }
+
+    .projects-page-list {
+        flex-direction: column;
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .summary > section {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        border-bottom: rgb(153, 152, 152) solid 1px;
+    }
+
+    .projects {
+        border-bottom: rgb(153, 152, 152) solid 1px;
+        border-right: none;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .project {
+        text-align: center;
+        border-top: rgb(153, 152, 152) solid 1px;
+        background-color: #ccc;
+    }
+
+    .work-experience {
+        border-bottom: rgb(153, 152, 152) solid 1px;
+        text-align: center;
+        border-right: none;
+    }
+
+    .work-experience-item {
+        border-top: rgb(153, 152, 152) solid 1px;
+        text-align: left;
+        padding-left: 20px;
+        background-color: #ccc;
+    }
+
+    .education {
+        border-bottom: rgb(153, 152, 152) solid 1px;
+        text-align: center;
+        border-right: none;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    .education-info {
+        border-top: rgb(153, 152, 152) solid 1px;
+        text-align: left;
+        padding-left: 20px;
+        background-color: #ccc;
+    }
+
+    .course-list {
+        padding: 0px;
+        margin: 0px;
+        padding-left: 20px;
+    }
+
+    .reviews {
+        margin-bottom: 30px;
+    }
+
+    .reviews-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .review {
+        width: auto;
+    }
+
+    .contact-form {
+        width: 40%;
+    }
+
+}
+
+@media (768px < width <= 1024px) {
+
+    .summary {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .summary > section {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .projects {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        width: 33.9%;
+    }
+
+    .projects > * {
+        padding: 10px;
+    }
+    
+    .work-experience {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .work-experience > * {
+        padding: 10px;
+    }
+
+    .education {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        width: 33.9%;
+    }
+
+    .education > * {
+        padding: 10px;
+    }
+
+    .reviews {
+        align-items: center;
+    }
+
+    .reviews-list {
+        gap: 20px;
+    }
+
+    .review {
+        width: auto;
+    }
+
+    .contact-form {
+        width: 40%;
+    }
+}
