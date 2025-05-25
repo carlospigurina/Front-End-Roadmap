@@ -165,6 +165,9 @@ This repository contains front-end projects built following the <a href="https:/
   Click any of the images below to view the readme and live demo of the project.
 </p>
 <br>
+<h2> 
+  IMAGES AND PREVIEW COMING SOON !
+</h2>
 
 <!-- PREVIEW AND DEMO -->
 <br>

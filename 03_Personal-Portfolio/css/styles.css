@@ -1,13 +1,29 @@
 /* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --base-color: #f2f2f2;
+    --base-variant: #333333;
+    --text-color: #424242;
+    --second-text-color: whitesmoke;
+    --accent-color: #24a0d1;
+}
+
+.darkmode {
+    --base-color: #121212;
+    --base-variant: #333333;
+    --text-color: whitesmoke;
+    --second-text-color: #E0E0E0;
+    --accent-color: #FFE87C;
+}
+
 body { 
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    color: #424242;
+    color: var(--text-color);
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: var(--base-color);
 }
 
 
@@ -16,7 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: var(--base-color);
     padding: 5px 50px 5px 50px;
     box-shadow: 1px 1px 5px 0 rgba(0,0,0,.2);
 }
@@ -61,7 +77,7 @@ body {
 
 /* TITLE */
 .title {
-    background-color: #333333;
+    background-color: var(--base-variant);
     text-align: center;
     font-style: italic;
     font-size: 40px;
@@ -166,7 +182,7 @@ body {
     color: #e6e5e5;
     background-color: #363636;
     padding: 20px;
-    border: #333333 solid 1px;
+    border: var(--base-variant) solid 1px;
     border-radius: 15px;
     width: 15%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
@@ -191,10 +207,10 @@ body {
 .contact-form {
     display: flex;
     flex-direction: column;
-    background-color: #333333;
+    background-color: var(--base-variant);
     gap: 20px;
     padding: 50px;
-    border: #333333 solid 1px;
+    border: var(--base-variant) solid 1px;
     border-radius: 15px;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
     width: 30%;
@@ -203,19 +219,19 @@ body {
 .contact-button {
     background-color: #24a0d1;
     padding: 5px;
-    border: #333333 solid 1px;
+    border: var(--base-variant) solid 1px;
     border-radius: 15px;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
-    color: #f2f2f2;
+    color: var(--base-color);
 }
 
 .contact-label {
-    color: #f2f2f2;
+    color: var(--base-color);
 }
 
 .contact-input {
     padding: 5px 10px 5px 10px;
-    border: #333333 solid 1px;
+    border: var(--base-variant) solid 1px;
     border-radius: 15px;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
 }
@@ -223,7 +239,7 @@ body {
 .contact-textarea {
     resize: none;
     padding: 5px;
-    border: #333333 solid 1px;
+    border: var(--base-variant) solid 1px;
     border-radius: 15px;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
 }
@@ -287,13 +303,13 @@ body {
 }
 
 .projects-page-item {
-    background-color: #333333;
-    color: #f2f2f2;
+    background-color: var(--base-variant);
+    color: var(--base-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border: #333333 solid 1px;
+    border: var(--base-variant) solid 1px;
     border-radius: 15px;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
 
@@ -305,16 +321,43 @@ body {
     text-align: center;
     font-size: 18px;
     padding: 20px 20px 20px 20px;
-    background-color: #333333;
-    color: #f2f2f2;
+    background-color: var(--base-variant);
+    color: var(--base-color);
 }
 /* ------ */
+
+/* DARK THEME BUTTON */
+.dark-theme-button {
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: var(--base-variant) solid 1px;
+    border-radius: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
+    color: var(--base-color);
+    font-size: 24px;
+
+    i.fa-sun {
+        display: none;
+    }
+}
 
 /* MEDIA QUERIES */
 
 /* MOBILE */
 
 @media (320px <= width <= 480px) {
+
+    .darkmode{
+        --base-color: #121212;
+        --base-variant: #333333;
+        --text-color: whitesmoke;
+        --second-text-color: #E0E0E0;
+        --accent-color: #FFE87C;
+    }
 
     .header {
         flex-direction: column;
@@ -373,7 +416,7 @@ body {
     .project {
         text-align: center;
         border-top: rgb(153, 152, 152) solid 1px;
-        background-color: #ccc;
+        background-color: var(--base-variant);
     }
 
     .work-experience {
@@ -384,9 +427,9 @@ body {
 
     .work-experience-item {
         border-top: rgb(153, 152, 152) solid 1px;
-        text-align: left;
+        text-align: center;
         padding-left: 20px;
-        background-color: #ccc;
+        background-color: var(--base-variant);
 
     }
 
@@ -581,6 +624,7 @@ body {
 
     .navbar-list {
         font-size: 14px;
+        padding: 0pc;
     }
 
     .title {
