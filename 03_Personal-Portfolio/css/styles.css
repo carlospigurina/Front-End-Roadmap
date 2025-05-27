@@ -3,15 +3,16 @@
 
 :root {
     --base-color: #f2f2f2;
-    --base-variant: #333333;
+    --base-variant: #444444;
+    --base-second-variant: #ccc;
     --text-color: #424242;
     --second-text-color: whitesmoke;
     --accent-color: #24a0d1;
 }
 
 .darkmode {
-    --base-color: #121212;
-    --base-variant: #333333;
+    --base-color: #070b1d;
+    --base-variant: #444444;
     --text-color: whitesmoke;
     --second-text-color: #E0E0E0;
     --accent-color: #FFE87C;
@@ -32,6 +33,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(
+        to right,
+        var(--accent-color),
+        var(--base-variant),
+        var(--accent-color)
+    ) ;
     background-color: var(--base-color);
     padding: 5px 50px 5px 50px;
     box-shadow: 1px 1px 5px 0 rgba(0,0,0,.2);
@@ -184,7 +191,7 @@ body {
     padding: 20px;
     border: var(--base-variant) solid 1px;
     border-radius: 15px;
-    width: 15%;
+    width: 20%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
 }
 
@@ -351,14 +358,6 @@ body {
 
 @media (320px <= width <= 480px) {
 
-    .darkmode{
-        --base-color: #121212;
-        --base-variant: #333333;
-        --text-color: whitesmoke;
-        --second-text-color: #E0E0E0;
-        --accent-color: #FFE87C;
-    }
-
     .header {
         flex-direction: column;
         margin: 0px;
@@ -387,7 +386,21 @@ body {
         margin: 0px;
     }
 
+    .dark-theme-button {
+        margin-bottom: 10px;
+        height: 30px;
+        width: 30px;
+
+        i.fa-moon, i.fa-sun {
+            font-size: 20px;
+        }
+    }
+
     .title {
+        font-size: 20px;
+    }
+
+    .subtitle {
         font-size: 20px;
     }
 
@@ -416,7 +429,7 @@ body {
     .project {
         text-align: center;
         border-top: rgb(153, 152, 152) solid 1px;
-        background-color: var(--base-variant);
+        background-color: var(--base-second-variant);
     }
 
     .work-experience {
@@ -428,8 +441,7 @@ body {
     .work-experience-item {
         border-top: rgb(153, 152, 152) solid 1px;
         text-align: center;
-        padding-left: 20px;
-        background-color: var(--base-variant);
+        background-color: var(--base-second-variant);
 
     }
 
@@ -445,13 +457,14 @@ body {
         border-top: rgb(153, 152, 152) solid 1px;
         text-align: left;
         padding-left: 20px;
-        background-color: #ccc;
+        background-color: var(--base-second-variant);
     }
 
     .course-list {
         padding: 0px;
         margin: 0px;
-        padding-left: 20px;
+        padding-left: 30px;
+        padding-right: 20px;
     }
 
     .reviews {
@@ -513,6 +526,16 @@ body {
         font-size: 20px;
     }
 
+    .dark-theme-button {
+        margin-bottom: 10px;
+        height: 50px;
+        width: 50px;
+
+        i.fa-moon, i.fa-sun {
+            font-size: 30px;
+        }
+    }
+
     .title {
         font-size: 30px;
     }
@@ -559,7 +582,7 @@ body {
     .project {
         text-align: center;
         border-top: rgb(153, 152, 152) solid 1px;
-        background-color: #ccc;
+        background-color: var(--base-second-variant);
     }
 
     .work-experience {
@@ -572,7 +595,7 @@ body {
         border-top: rgb(153, 152, 152) solid 1px;
         text-align: left;
         padding-left: 20px;
-        background-color: #ccc;
+        background-color: var(--base-second-variant);
     }
 
     .education {
@@ -587,7 +610,7 @@ body {
         border-top: rgb(153, 152, 152) solid 1px;
         text-align: left;
         padding-left: 20px;
-        background-color: #ccc;
+        background-color: var(--base-second-variant);
     }
 
     .course-list {
@@ -618,13 +641,36 @@ body {
 
 @media (768px < width <= 1024px) {
 
+    .header {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .profile {
+        gap: 15px;
+    }
+
     .profile-name {
-        font-size: 17px;
+        font-size: 16px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
     }
 
     .navbar-list {
-        font-size: 14px;
-        padding: 0pc;
+        font-size: 16px;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .dark-theme-button {
+        height: 33px;
+        width: 33px;
+
+        i.fa-moon, i.fa-sun {
+            font-size: 20px;
+        }
     }
 
     .title {

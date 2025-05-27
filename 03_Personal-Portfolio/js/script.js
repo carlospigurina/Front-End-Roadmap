@@ -5,6 +5,7 @@ const header = document.querySelector("header");
 const moonIcon = document.querySelector(".fa-moon");
 const sunIcon = document.querySelector(".fa-sun");
 const projectItems = document.querySelectorAll(".project");
+const titleSection = document.querySelector(".title");
 
 
 
@@ -16,6 +17,8 @@ themeButton.addEventListener("click", () => {
     header.style.backgroundColor = "#121212";
     header.style.color = "#E0E0E0";
     header.style.transition = "all 0.5s ease-in-out";
+
+    titleSection.style.backgroundColor = "#444444";
 
     moonIcon.style.display = "none";
     sunIcon.style.display = "block";
