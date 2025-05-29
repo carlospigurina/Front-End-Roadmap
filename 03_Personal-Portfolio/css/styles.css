@@ -35,7 +35,7 @@
     --base-color: #121212;
     --text-color: whitesmoke;
     --second-text-color: #E0E0E0;
-    --base-second-variant: #101425;
+    --base-second-variant: #181F37;
 
     --links-color: #FD6F01;
 
@@ -168,6 +168,7 @@ section.title {
 
 .project {
     padding-bottom: 1px;
+    font-weight: 500;
 }
 /* --------- */
 
