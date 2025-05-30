@@ -760,10 +760,6 @@ section.title {
     .dark-theme-button {
         height: 33px;
         width: 33px;
-
-        i.fa-moon, i.fa-sun {
-            font-size: 20px;
-        }
     }
 
     .title {
