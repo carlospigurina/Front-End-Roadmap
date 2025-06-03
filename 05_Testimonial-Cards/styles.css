@@ -25,7 +25,7 @@ body {
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
     width: 60%;
     margin: auto;
-    padding: 20px 30px 20px 30px;
+    padding: 50px 30px 50px 30px;
 }
 
 .testimonials-cards-container {
@@ -125,6 +125,7 @@ a.card-link {
 
 p.second-testimonial-card-text {
     line-height: 1.5;
+    font-size: 15px;
 }
 
 p.second-testimonial-card-role {
@@ -200,8 +201,8 @@ p.third-testimonial-card-text {
 /* LAST TESTIMONIALS CARD */
 
 .last-testimonials-card {
-    display: flex;
-    padding: 50px 80px 50px 80px;
+    display: column;
+    padding: 50px 60px 50px 60px;
     border:#242424 solid 1px;
     border-radius: 15px;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
@@ -213,10 +214,69 @@ p.third-testimonial-card-text {
 .last-testimonials-card-text {
     line-height: 1.4;
     font-size: 15px;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
 }
 
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 0px 0px;
+    gap: 10px;
+}
 
+.carousel-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px 0px 20px;
+}
 
+.carousel-img-1,
+.carousel-img-3 {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    opacity: 0.6;
+}
+
+.carousel-img-2 {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+
+.carousel-button {
+    color: #666666;
+    background: none;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    height: 45px;
+    width: 45px;
+    fill: #666666;
+    opacity: 0.6;
+}
+
+.arrow-icon:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
 
 /* ------------------------ */
 
@@ -226,4 +286,5 @@ p.third-testimonial-card-text {
     background-color: #333333;
     color: #f2f2f2;
     padding: 20px;
+    margin-top: 50px;
 }
